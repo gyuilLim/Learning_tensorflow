@@ -1,0 +1,23 @@
+-how to use docker
+
+1. download image
+docker pull deeplearningzerotoall/tensorflow
+
+2. confirm image's existence
+docker images
+
+3. execute container from docker image
+docker run -it --name [name] -p 8888:8888 -p 6006:6006 deeplearningzerotoall/tensorflow /bin/bash
+
+4. confirm status
+docker ps -a
+docker ps
+
+5. go in and out
+docker start [name]
+docker attach [name]
+
+6. execute jupyter notebook
+jupyter notebook --ip 0.0.0.0 --allow-root
+
+7. enter [IP adress]:8888
