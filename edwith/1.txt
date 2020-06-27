@@ -1,0 +1,14 @@
+Linear Regression
+
+데이터를 가장 잘 대변하는 직선의 방정식을 찾는 것
+H(x) = W(weight)x + b(bias) : (hypothesis)
+
+Cost = H(x) - y(real data) : Loss, Error
+
+Cost(W,b) = 1/m * sigma(i=1->m)(Wxi - yi)^2
+: 가설직선에서 실제데이터값을 뺀 값의 제곱의 합
+
+GOAL : find W, b when Minimize Cost
+
+Gradient descent : 경사 하강법
+minimize cost(W, b)
